@@ -14,9 +14,9 @@ Seq2Seq (Encoder–Decoder)
 
 Attention Mechanism
 
-Transformer (Self-Attention)
+Transformer Architecture
 
-Subword Tokenization
+Tokenization
 
 Word Embeddings
 
