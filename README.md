@@ -1,101 +1,79 @@
-📘 A Comparative Analysis of Deep Learning Techniques for English–Tamil Text Translation
+English–Tamil Neural Machine Translation
+
+
+
+
+
+
+
+
+A deep learning–based English–Tamil Neural Machine Translation (NMT) system comparing Seq2Seq with Attention and Transformer architectures for low-resource language translation.
+
 📌 Overview
 
-This project presents a comparative study of deep learning models for English–Tamil Neural Machine Translation (NMT). The goal is to improve translation accuracy for the low-resource English–Tamil language pair using modern deep learning techniques such as Seq2Seq with Attention and Transformer architectures.
+This project aims to improve translation quality between English and Tamil by leveraging modern deep learning architectures and subword tokenization techniques. The system evaluates performance using BLEU and chrF metrics.
 
-The project focuses on improving translation quality for applications in education, government, and healthcare domains.
+🧠 Models Implemented
 
-🎯 Objectives
+Sequence-to-Sequence (Encoder–Decoder)
 
-Study various deep learning models for English–Tamil translation
+Attention Mechanism
 
-Compare performance of Seq2Seq and Transformer-based models
+Transformer Architecture (Self-Attention)
 
-Implement attention mechanisms for better alignment
+Subword Tokenization
 
-Improve translation quality using subword tokenization
+Word Embeddings
 
-Evaluate models using BLEU and chrF scores
-
-❗ Problem Statement
-
-Despite advancements in Neural Machine Translation, English–Tamil translation remains challenging due to:
-
-Structural and grammatical differences
-
-Rich morphology of Tamil
-
-Limited parallel corpora
-
-Vocabulary sparsity and rare word problems
-
-Inaccurate translations affect usability in real-world domains such as education and healthcare.
-
-🧠 Techniques Used
-
-🔹 Sequence-to-Sequence (Seq2Seq) Architecture
-
-🔹 Attention Mechanism
-
-🔹 Transformer Architecture (Self-Attention)
-
-🔹 Subword Tokenization (to handle rare words)
-
-🔹 Word Embeddings
-
-🏗️ Project Architecture
-
-Workflow:
-
-Data Acquisition
-        ↓
-Data Preprocessing (Cleaning, Tokenization, Padding)
-        ↓
-Train-Test Split
-        ↓
-Model Training (Transformer / Seq2Seq + Attention)
-        ↓
+⚙️ Project Workflow
+Data Collection
+      ↓
+Text Preprocessing
+      ↓
+Tokenization & Embeddings
+      ↓
+Model Training
+      ↓
 Evaluation (BLEU, chrF)
-        ↓
-Inference (Tamil Translation Output)
+      ↓
+Translation Inference
 
-🧩 Modules
+🛠 Tech Stack
 
-Data Preparation Module
+Python 3.8+
 
-Text cleaning
+PyTorch / TensorFlow
 
-Normalization
+HuggingFace Transformers
 
-Subword segmentation
+NumPy
 
-Text Representation Module
+Pandas
 
-Tokenization
+NLTK / spaCy
 
-Embedding generation
+📦 Installation
 
-Model Training Module
+Clone the repository:
 
-Transformer-based encoder-decoder
+git clone https://github.com/Yeshwanth-A05/Live-Subtitle-.git
+cd Live-Subtitle-
 
-Attention mechanism
 
-Performance Evaluation Module
+Install dependencies:
 
-BLEU Score
+pip install -r requirements.txt
 
-chrF Score
+▶️ Running the Project
 
-Translation Inference Module
+Train the model:
 
-Generate Tamil translations
+python train.py
 
-Output Refinement Module
 
-Detokenization
+Run inference:
 
-Final formatting
+python inference.py
 
 📊 Evaluation Metrics
 
@@ -103,81 +81,20 @@ Sentence-level BLEU
 
 Corpus-level BLEU
 
-chrF score
+chrF Score
 
-These metrics measure translation quality and alignment accuracy.
+🌍 Impact
 
-💻 Software Requirements
-
-Python 3.8+
-
-PyTorch 1.9+ / TensorFlow 2.x
-
-Transformers Library
-
-NumPy
-
-Pandas
-
-Scikit-learn
-
-Matplotlib
-
-NLTK / spaCy
-
-🖥️ Hardware Requirements
-
-GPU (NVIDIA GTX or better, 8GB+ VRAM recommended)
-
-16GB RAM
-
-Intel i7 / AMD Ryzen 7 (8+ cores)
-
-SSD storage
-
-📚 Literature Reference
-
-Key foundational works include:
-
-Bahdanau et al. (2014) – Attention Mechanism
-
-Sutskever et al. (2014) – Seq2Seq with LSTM
-
-Vaswani et al. (2017) – Transformer Architecture
-
-Conneau & Lample (2019) – Pre-training for NMT
-
-Tamil-English low-resource NMT studies (2020+)
-
-🌍 Social Impact
-
-This project supports:
+This project promotes language accessibility and supports digital inclusion for Tamil-speaking communities, aligning with:
 
 SDG 4 – Quality Education
 
 SDG 10 – Reduced Inequalities
 
-It promotes language accessibility and digital inclusion for Tamil-speaking communities.
+👥 Team
 
-🚀 Future Improvements
+Saliniyan P
 
-Fine-tuning multilingual pretrained models (IndicBERT, mBART)
+Sanjay A
 
-Increasing dataset size
-
-Synthetic data generation
-
-Domain-specific adaptation (medical/legal translation)
-
-Low-resource transfer learning
-
-👥 Team Members
-
-Saliniyan P – 22ALR083
-
-Sanjay A – 22ALR084
-
-Yeshwanth A – 22ALR115
-
-Project Guide:
-Dr. K. Logeswaran
+Yeshwanth A
